@@ -3,6 +3,13 @@ import math
 #For the limit in the definition of the derivative
 h = 0.00000001
 
+#Should improve the user input to not rely upon them entering lambda's
+#and then calling eval()
+#Usage: If f = x * y * z and (x,y,z) = (1,2,3) and the uncertainty's in 
+#(x,y,z) are (0.1,0.1,0.1):
+#Function: lambda x: x[0] * x[1] * x[2]
+#Experimental Values: 1 2 3
+#Errors: 0.1 0.1 0.1
 def run():
 	func = raw_input("Function: ")
 	val = inputNumericArray("Experimental Values: ")
